@@ -12,10 +12,10 @@ const app = express();
 app.use(express.json());
 
 app.use(
-  cors({
+  cors(
     origin: ["http://localhost:5173", "https://plant-care-kappa-flame.vercel.app"],
     credentials: true,
-  })
+)
 );
 
 app.use("/api/auth", authRoutes); //this is a middleware for auth routes
