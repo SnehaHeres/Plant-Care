@@ -1,7 +1,7 @@
 // src/api.js
 import axios from "axios";
 
-const API = axios.create({ baseURL: "http://localhost:5000/api" });
+const API = axios.create({ baseURL: "https://plant-care-79je.onrender.com/api" });
 
 API.interceptors.request.use((req) => {
   const userInfo = JSON.parse(localStorage.getItem("userInfo"));
