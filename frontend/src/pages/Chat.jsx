@@ -8,7 +8,7 @@ const HISTORY_KEY = `plant_ai_history_v2`;
 // ✅ NAYA FUNCTION: YEH AAPKE BACKEND KO CALL KAREGA
 async function askPlantBot(prompt, token) {
   try {
-    const response = await fetch('http://localhost:5000/api/plants/ask-bot', {
+    const response = await fetch('https://plant-care-79je.onrender.com/api/plants/ask-bot', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
