@@ -23,8 +23,8 @@ const AuthPage = () => {
     setIsLoading(true);
     try {
       const endpoint = isLogin
-        ? "http://localhost:5000/api/auth/login"
-        : "http://localhost:5000/api/auth/register";
+        ? "https://plant-care-79je.onrender.com/api/auth/login"
+        : "https://plant-care-79je.onrender.com/api/auth/register";
 
       const payload = isLogin
         ? { email: data.email, password: data.password }
