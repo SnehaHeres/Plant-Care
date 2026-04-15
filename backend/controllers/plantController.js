@@ -23,9 +23,9 @@ export const getPlantBotResponse = asyncHandler(async (req, res) => {
       apiKey: process.env.GEMINI_API_KEY || process.env.API_KEY
     });
 
-    // ✅ Use gemini-2.5-flash model (best price-performance for chat)
+    // ✅ Use gemini-3-pro model (best price-performance for chat)
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-flash",
+      model: "gemini-3-flash-preview",
       contents: `You are a helpful assistant named Plant Bot.
 Provide clear, concise and practical advice about plants.
 Question: ${prompt}`
